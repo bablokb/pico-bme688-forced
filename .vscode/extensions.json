@@ -2,6 +2,7 @@
   "recommendations": [
     "marus25.cortex-debug",
     "ms-vscode.cmake-tools",
-    "ms-vscode.cpptools"
+    "ms-vscode.cpptools",
+    "actboy168.tasks"
   ]
 }
