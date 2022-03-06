@@ -39,12 +39,11 @@ add_compile_definitions(UPDATE_INTERVAL=10)
 #add_compile_definitions(WITH_UNITS)
 
 # configuration for the library (override if necessary)
-add_compile_definitions(BME68X_DO_NOT_USE_FPU)
-add_compile_definitions(BME68X_PORT=i2c1)
-add_compile_definitions(BME68X_ADDR=BME68X_I2C_ADDR_HIGH)
-add_compile_definitions(BME68X_SDA=2)
-add_compile_definitions(BME68X_SCL=3)
-#add_compile_definitions(BME68X_I2C_PU)      # use builtin-pullups
+#set(BME68X_PORT     "i2c1"                 CACHE STRING "i2c-port name")
+#set(BME68X_SDA      "2"                    CACHE STRING "SDA pin-number for BME68X")
+#set(BME68X_SCL      "3"                    CACHE STRING "SCL pin-number for BME68X")
+#set(BME68X_ADDR     "BME68X_I2C_ADDR_HIGH" CACHE STRING "BME68x address constant")
+#set(BME68X_I2C_PU   "NO_BME68X_I2C_PU"     CACHE STRING "use (NO) builtin pullups")
 
 # add preprocessor-constant DEBUG for Debug-builds
 if(CMAKE_BUILD_TYPE STREQUAL "Debug")
